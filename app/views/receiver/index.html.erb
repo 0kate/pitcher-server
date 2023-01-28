@@ -1,0 +1,12 @@
+<h1>Receiver</h1>
+
+<div id="qrcode"></div>
+<hr style="padding: 10;" />
+<input id="receivedText" />
+
+<script>
+  window.onload = function () {
+    const qrcodeArea = document.getElementById('qrcode');
+    new QRCode(qrcodeArea, 'http://192.168.0.11:3000/sender');
+  };
+</script>
